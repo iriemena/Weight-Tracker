@@ -59,7 +59,7 @@ header{
 			}
 		}
 
-		@media screen and (max-width: 600px){
+		@media screen and (max-width: 500px){
 			header{
 				background-image: url('scale.jpg');
 				background-repeat: no-repeat;
