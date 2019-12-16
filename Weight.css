@@ -45,7 +45,7 @@ header{
 		float: right;
 	}
 
-	@media screen and (max-width: 800px){
+	@media screen and (max-width: 600px){
 		header{
 			background-image: url('scale.jpg');
 			background-repeat: no-repeat;
@@ -59,7 +59,7 @@ header{
 			}
 		}
 
-		@media screen and (max-width: 500px){
+		@media screen and (max-width: 400px){
 			header{
 				background-image: url('scale.jpg');
 				background-repeat: no-repeat;
