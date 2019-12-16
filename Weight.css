@@ -22,7 +22,7 @@ header{
 		font-size: 80px;
 		font-family: sans-serif;
 		padding: initial;
-		color: blue;
+		color: blueviolet;
 		margin-top: 0;
 		text-shadow: 2px 3px yellow
 	}
@@ -40,7 +40,21 @@ header{
 	}
 	.next{
 		color: blue;
-		font-size: 18px
+		font-size: 18px;
 		font-style: normal;
 		float: right;
 	}
+
+	@media screen and (max-width: 600px){
+		header{
+			background-image: url('scale.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			padding: 100px;
+			box-sizing: border-box;
+			text-align: center;
+			font-size: 400px;
+			width: 100%
+			}
+		}
