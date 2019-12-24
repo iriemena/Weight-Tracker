@@ -2,12 +2,13 @@ header{
 		background-image: url('scale.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 50%;
+		background-size: 70%;
 		padding: 70px;
 		box-sizing: border-box;
 		text-align: center;
 		font-size: 200px;
-		width: 100%
+		width: 100%;
+		
 	}
 	h2{
 		text-align: center;
@@ -19,7 +20,7 @@ header{
 	}
 	h2{
 		text-align: center;
-		font-size: 80px;
+		font-size: 100px;
 		font-family: sans-serif;
 		padding: initial;
 		color: blueviolet;
@@ -45,7 +46,7 @@ header{
 		float: right;
 	}
 
-	@media screen and (min-height: 200px){
+	@media screen and (max-width: 1000px){
 		header{
 			background-image: url('scale.jpg');
 			background-repeat: no-repeat;

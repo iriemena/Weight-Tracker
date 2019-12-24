@@ -7,125 +7,124 @@
 	*{
 		box-sizing: border-box;
 	}
-	.form{
+	.form1{
 		background-image: url('scalee.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		background-color: #fcfcfc
-	} 
-	label{
-		margin-left: 30px;
-		float: left;
+		background-color: #fcfcfc;
+		height: 600px;
 		width: 70%;
-		font-size:20px;
-		font-weight: bolder;
-		margin-top: 10px;
-		color: #ccf;
-		font-family: arial;
-		text-shadow: 2px 2px 2px blue
+	} 
+
+	.form{
+		display: flex;
+		flex-flow: wrap;
 	}
-	input[type=text] {
+	label{
 		font-size: 20px;
-		margin-left: 30%
-
-	}
-	
-	input[type=date]{
-		font-size: 20px;
-		margin-top: 10px;
-		margin-left: 30%
-	}
-
-	input[type=number] {
-		font-size: 20px;
-		margin-top: 10px;
-		margin-left: 30%
-	}
-	input[type=button] {
-		font-size: 20px;
-		margin-top: 10px;
-		margin-left: 30%
-	}
-
-	select {
-		font-size: 20px;
-		margin-top: 10px;
-		margin-left: 30%
-	}
-	
-	.form1{
-		background-color: #f3f3f3
-	}
-
-	.previous{
-		float: left;
-	}
-
-	.next{
-		float: right;
-	}
-
-	@media screen and (max-width: 600px), screen and (min-height: 600px){
-		label{
-		width: 100%;
-		font-size:25px;
-		font-weight: bold;
-		margin-top: initial;
-		color: #fff;
-		font-family: arial;
-		text-shadow: 2px 2px 2px rgb(10, 60, 139);
-		margin: 0;
-		text-align: center;
-		padding: 20px;
+		color: darkorchid;
+		padding: 30px;
+		text-shadow: 5px 5px 10px #ccc;
 		
 	}
-	input[type=text] {
-		font-size: 20px;
-		width: 100%;
-		margin: 0;
-	}
-	
-	input[type=date]{
-		font-size: 20px;
-		width: 100%;
-		margin: 0;
+	input, select{
+		width: 60%;
+		margin-top: 20px;
+		border-radius: 5px;
+		box-shadow: 5px 2px 3px 2px #ccc;
+		
 	}
 
-	input[type=number] {
-		font-size: 20px;
-		width: 100%;
-		margin: 0;
+	.form > label{
+		flex: 0.5;
 	}
-	input[type=button] {
-		font-size: 20px;
-		width: 100%;
-		margin: 0;
+	
+	a:hover{
+		color: red
+	}
+
+	button{
+		color: blue;
+		margin: auto;
+		font-size: 18px;
+		width: 10%;
+		position: absolute;
+		left: 300px;
+		bottom: 300px;
+	}
+	button:hover{
 		color: red;
 	}
-
-	select {
-		font-size: 20px;
-		width: 100%;
-		margin: 0;
-	}
-	
-	.previous{
-		float: left;
-		position: absolute;
-		bottom: 0;
-	}
-
 	.next{
 		float: right;
+	}
+
+	.att{
 		position: absolute;
-		right: 0;
-		bottom: 0;
+		top: 50px;
+		right: 40px;
+		font-size: 20px;
+		background-color:azure; 
+		color: red;
+		height: 200px;
+		width: 35%;
+		text-align: center;
+		line-height: 2em;
+		border-radius: 10px;
 	}
 
+	@media screen and (max-width: 1000px) {
+		.form1{
+		width: 100%;
+		height: 550px;
+	} 
+	
+		input, select{
+			width: 100%;
+			margin: 0;
+			border-radius: 2px;
+			margin: auto;
+			position: relative;
+		}
+
+		label{
+		font-size: 25px;
+		color:tomato;
+		font-weight: bold;
+		text-align: center; 
+		padding: 16px;
+		text-shadow: 10px 10px 20px #ccf;
+		margin: auto;
+		
 	}
-
-
+	.att{
+		position: absolute;
+		top: 570px;
+		right: 150px;
+		font-size: 14px;
+		color: red;
+		height: 17.00px;
+		width: 40%;
+		text-align: center;
+		line-height: initial;
+		height: 100px;
+		background-color: initial;
+		
+		
+	}
+	button{
+		color: blue;
+		font-size: 16px;
+		width: 10%;
+		position: absolute;
+		bottom: 0px;
+		left: 190px;
+		
+		
+	}
+	
+	}
 </style>
 
 <body>
@@ -133,28 +132,44 @@
 	<div class="form">
 	<label>Unit</label>
 	<input type="text" name="name" placeholder="kg/cm">
-<br>
+	</div>
+	
+	<div class="form">
 	<label>Birthday</label>
 	<input type="date" name="Birthday">
-<br>
+	</div>
+
+	<div class="form">
 	<label>Gender</label>
 	<select>
 		<option>Male</option>
 		<option>Female</option>
 	</select>
-<br>
+	</div>
+	
+	<div class="form">
 	<label>Height</label>
 	<input type="number" name="height" placeholder="cm">
-<br>
+	</div>
+
+	<div class="form">
 	<label>Current Weight</label>
 	<input type="number" name="cweight" placeholder="kg">
-<br>
+	</div>
+	<div class="form">
 	<label>Desired Weight</label>
 	<input type="number" name="dweight" placeholder="kg">
-<br>
-	<a href="results.html"><input type="button" value="Save"></a>
+	</div>
+	<div class="form">
+	<a  href="results.html"><button type="button">Save</button></a>
+	</div>
 </div>
 </form>
+
+<div class="att">
+<h4>Attention</h4>
+<p style="color:chocolate">This is a testing app, <br> more things would be added</p>
+</div>
 
 <a class="previous" href="index.html">Previous</a>
 <a class="next" href="results.html">Next</a>
