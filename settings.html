@@ -13,7 +13,7 @@
 		background-position: center;
 		background-size: contain;
 		background-color: #fcfcfc;
-		height: 600px;
+		height: 700px;
 		width: 70%;
 	} 
 
@@ -24,7 +24,7 @@
 	label{
 		font-size: 20px;
 		color: darkorchid;
-		padding: 30px;
+		padding: 35px;
 		text-shadow: 5px 5px 10px #ccc;
 		
 	}
@@ -60,6 +60,18 @@
 		float: right;
 	}
 
+	.save a{
+		text-decoration: none;
+		color:chartreuse;
+		font-size: 30px;
+		border: 1px solid silver;
+		background-color:slategray;
+		border-radius: 3px;
+		margin-left: 450px;
+	}
+	.save a:hover{
+		color: red;
+	}
 	.att{
 		position: absolute;
 		top: 50px;
@@ -82,16 +94,7 @@
 	background-size: 130%;
 	} 
 	
-	button{
-	color: blue;
-	margin: auto;
-	font-size: 18px;
-	width: 10%;
-	position: absolute;
-	left: 400px;
-	bottom: -90px;
-	}
-
+	
 	input, select{
 	width: 100%;
 	margin: 0;
@@ -101,7 +104,7 @@
 	}
 
 	label{
-	font-size: 55px;
+	font-size: 50px;
 	color:cyan;
 	font-weight: bolder;
 	text-align: center; 
@@ -162,8 +165,9 @@
 	<label>Desired Weight</label>
 	<input id="desire" type="number" name="dweight" placeholder="kg">
 	</div>
-	<div class="form">
-	<a href="results.html"><button type="button">Save</button></a>
+	<br>
+	<div class="save">
+	<a href="results.html">save</a>
 	</div>
 </div>
 </form>
